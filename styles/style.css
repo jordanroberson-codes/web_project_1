@@ -1,3 +1,10 @@
+div {
+  border: 2px solid red;
+}
+/* -------------------------------------------------*/
+/*                     BLOCKS                       */
+/* -------------------------------------------------*/
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -6,26 +13,77 @@
   /* here we've set a maximum page width */
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+
   /* parameters for the header section */
 }
 
+.content {
+}
+
+.description {
+}
+
+.digits {
+}
+
+.feynman {
+}
+
+.kaufman {
+}
+
+.footer {
+}
+
+/* -------------------------------------------------*/
+/*                     ELEMENTS                     */
+/* -------------------------------------------------*/
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
+.logo_place_header {
+  position: absolute;
+  width: 154px;
+  height: 31px;
+  z-index: 1;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__subtitle {
+}
+
+.header__link {
+}
+
+.header__main-illustration {
+}
+
+.header__square {
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
 }
 
+/* -------------------------------------------------*/
+/*                     MODIFIERS                    */
+/* -------------------------------------------------*/
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo_place_header {
 }
