@@ -97,6 +97,16 @@ section,
   position: relative;
 }
 
+/* footer */
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
 /* -------------------------------------------------*/
 /*                     ELEMENTS                     */
 /* -------------------------------------------------*/
@@ -252,6 +262,54 @@ section,
   z-index: 1;
 }
 
+/* Footer block */
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: #f2f2f2;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #f2f2f2;
+}
+.footer__list {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+}
+.footer__column-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__social-icons {
+  color: #f2f2f2;
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+  align-self: center;
+}
+
 /* -------------------------------------------------*/
 /*                     MODIFIERS                    */
 /* -------------------------------------------------*/
@@ -317,4 +375,30 @@ section,
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+/* footer section */
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.footer__column_content_about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
