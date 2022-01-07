@@ -1,8 +1,3 @@
-div,
-section,
-.table__cell_theme_dark {
-  border: 2px solid red;
-}
 /* -------------------------------------------------*/
 /*                     BLOCKS                       */
 /* -------------------------------------------------*/
@@ -359,11 +354,9 @@ section,
   margin-right: 0;
   margin-top: 60px;
   z-index: 1;
-  width: 200px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  z-index: 2;
 }
 
 .table__heading_theme_dark {
