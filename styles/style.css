@@ -12,7 +12,7 @@
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
+/* header section */
 .header {
   position: relative;
   height: 100vh;
@@ -23,96 +23,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.logo {
-  z-index: 4;
-}
-
-/* Description section */
-.description {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
-/* Digits Section */
-.digits {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.section-title {
-  width: 60%;
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 69px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-.section-subtitle {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  margin: auto;
-  width: 60%;
-}
-.table {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 1100px;
-  margin: auto;
-  justify-content: space-between;
-  margin-bottom: 100px;
-  padding-left: 0px;
-}
-
-/* Feynman Section */
-.feynman {
-  background: #f2f2f2 url(/images/feynman.png) no-repeat bottom left;
-  background-size: 867px 637px;
-  height: 790px;
-  position: relative;
-}
-
-/* Kaufman Section */
-.kaufman {
-  background-color: #1f1f1f;
-  overflow: hidden;
-  position: relative;
-}
-
-/* footer */
-.footer {
-  min-height: 350px;
-  background-color: #1f1f1f;
-  display: flex;
-  padding-bottom: 40px;
-  padding-top: 60px;
-  box-sizing: border-box;
-}
-
-/* -------------------------------------------------*/
-/*                     ELEMENTS                     */
-/* -------------------------------------------------*/
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-
-/* Header box */
-.logo_place_header {
-  position: absolute;
-  width: 154px;
-  height: 31px;
-  z-index: 5;
-  top: 30px;
-  left: 64px;
 }
 
 .header__title {
@@ -165,7 +75,33 @@
   z-index: 1;
 }
 
-/* Description Box */
+/* logo */
+.logo {
+  z-index: 4;
+}
+.logo_place_header {
+  position: absolute;
+  width: 154px;
+  height: 31px;
+  z-index: 5;
+  top: 30px;
+  left: 64px;
+}
+
+/* Description section */
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
 .two-columns__brief {
   width: 175px;
   color: #2f80ed;
@@ -193,7 +129,39 @@
   line-height: 34px;
   font-size: 24px;
 }
-/* Digits Box */
+/* Digits Section */
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section-title {
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 69px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  padding-left: 0px;
+}
+
 .table__cell {
   display: flex;
   align-content: flex-start;
@@ -212,7 +180,14 @@
   margin-bottom: 0px;
 }
 
-/* Feynman Block */
+/* Feynman Section */
+.feynman {
+  background: #f2f2f2 url(../images/feynman.png) no-repeat bottom left;
+  background-size: 867px 637px;
+  height: 790px;
+  position: relative;
+}
+
 .feynman__title {
   font-size: 120px;
   line-height: 1.15;
@@ -221,7 +196,7 @@
   display: block;
   margin: 0 auto;
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .feynman__subtitle {
@@ -245,70 +220,22 @@
   right: 48px;
 }
 
-/* Kaufman Block */
+/* Kaufman Section */
+.kaufman {
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+}
+
 .kaufman__triangle {
   position: absolute;
   width: 660px;
   height: 636px;
   right: -124px;
   top: 0px;
-  z-index: 1;
+  z-index: 0;
 }
 
-/* Footer block */
-.footer__columns {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 90%;
-}
-.footer__author {
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 18px;
-  margin-bottom: 18px;
-  color: #f2f2f2;
-}
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: 0;
-  color: #f2f2f2;
-}
-.footer__list {
-  list-style: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  padding: 0;
-}
-.footer__column-link {
-  color: #f2f2f2;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-}
-.footer__social-icons {
-  color: #f2f2f2;
-  width: 16px;
-  height: 16px;
-  padding-right: 10px;
-  align-self: center;
-}
-
-/* -------------------------------------------------*/
-/*                     MODIFIERS                    */
-/* -------------------------------------------------*/
-/* including elements with key-value modifiers */
-
-/* Kaufman Block */
 .section-title_theme_dark {
   line-height: 69px;
   font-size: 60px;
@@ -321,6 +248,7 @@
   margin-top: 90px;
   margin-bottom: 20px;
   z-index: 5;
+  position: relative;
 }
 .section-subtitle_theme_dark {
   width: 60%;
@@ -368,7 +296,62 @@
   font-weight: normal;
 }
 
-/* footer section */
+/* footer */
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: #f2f2f2;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #f2f2f2;
+}
+.footer__list {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+}
+.footer__column-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__social-icons {
+  color: #f2f2f2;
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+  align-self: center;
+}
 .footer__column_content_copyright {
   display: flex;
   flex-direction: column;
